@@ -1,0 +1,21 @@
+ion-content {
+
+  &.no-header {
+    --background: var(var(--ion-background-color), --ion-color-light);
+    --color: var(var(--ion-text-color), --ion-color-primary);
+  }
+
+  &.no-scroll {
+
+    &::part(scroll) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    > section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}

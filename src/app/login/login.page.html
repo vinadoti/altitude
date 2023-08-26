@@ -1,0 +1,37 @@
+<ion-content class="no-scroll ion-padding">
+  <div class="container">
+    <div class="ion-padding-vertical ion-margin-bottom">
+      <ion-img src="/assets/images/logo-horizontal.svg" class="img-logo"></ion-img>
+      <ion-text class="ion-text-center">
+        <h1 class="fw-bold">
+          Acessar minha conta
+        </h1>
+        <p>
+          Bem vindo de volta, preencha com seus dados para acessar a sua conta
+        </p>
+      </ion-text>
+    </div>
+    <form>
+      <ion-input class="custom"
+                 label="E-mail"
+                 labelPlacement="floating"
+                 placeholder="email@email.com"
+                 type="email" required></ion-input>
+      <ion-input class="custom"
+                 label="Senha"
+                 labelPlacement="floating"
+                 placeholder="********"
+                 type="password" required></ion-input>
+      <ion-button class="text-link" fill="clear" >
+        Esqueceu a senha?
+      </ion-button>
+      <ion-button color="dark" expand="block" [routerLink]="['']">Entrar</ion-button>
+      <ion-text class="ion-text-center">
+        <p>
+          Não tem uma conta?
+          <a href="/signup" class="ion-color-secondary">Cadastrar</a>
+        </p>
+      </ion-text>
+    </form>
+  </div>
+</ion-content>

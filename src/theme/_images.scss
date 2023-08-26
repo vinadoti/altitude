@@ -1,0 +1,16 @@
+img,
+ion-img {
+
+  &::part(image) {
+    object-fit: cover;
+  }
+
+  &:not([src]) {
+
+    &::part(image) {
+      //background: var(--ion-color-light);
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

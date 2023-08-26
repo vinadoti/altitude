@@ -1,0 +1,15 @@
+ion-header {
+
+  .header-logo {
+    font-size: 4rem;
+    width: 2.5em;
+  }
+
+  ion-button {
+
+    &::part(native) {
+      --padding-start: .125rem;
+      --padding-end: .125rem;
+    }
+  }
+}

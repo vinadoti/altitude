@@ -1,0 +1,121 @@
+ion-segment {
+  $ion-segment: &;
+  //--background: var(--ion-segment-background); // Background of the segment
+  //border-radius: var(--ion-segment-border-radius); // Radius of the segment border
+  //padding-inline: var(--ion-segment-padding-x); // Horizontal padding of the segment
+  //padding-top: var(--ion-segment-padding-top, var(--ion-segment-padding-y)); // Top padding of the segment button
+  //padding-end: var(--ion-segment-padding-end, var(--ion-segment-padding-x)); // Right padding if direction is left-to-right, and left padding if direction is right-to-left of the segment button
+  //padding-bottom: var(--ion-segment-padding-bottom, var(--ion-segment-padding-y)); // Bottom padding of the segment button
+  //padding-start: var(--ion-segment-padding-start, var(--ion-segment-padding-x)); // Left padding if direction is left-to-right, and right padding if direction is right-to-left of the segment button
+
+  &.no-feedback {
+
+    ion-segment-button {
+      --color: initial;
+      --color-checked: initial;
+      --indicator-color: initial;
+      font-weight: initial;
+    }
+  }
+
+  &-button {
+    //  --background: var(--ion-segment-button-background); // Background of the segment button
+    //  //--background-checked: '';	// Background of the checked segment button
+    //  //--background-focused: '';	// Background of the segment button when focused with the tab key
+    //  //--background-focused-opacity: '';	// Opacity of the segment button background when focused with the tab key
+    //  //--background-hover: '';	// Background of the segment button on hover
+    //  //--background-hover-opacity: '';	// Opacity of the segment button background on hover
+    //  //--border-color: '';	// Color of the segment button border
+    //  --border-radius: var(--ion-segment-button-border-radius); // Radius of the segment button border
+    //  //--border-style: '';	// Style of the segment button border
+    //  --border-width: var(--ion-segment-button-border-width); // Width of the segment button border
+    //  --color: var(--ion-segment-button-color); // Color of the segment button
+    //  --color-checked: var(--ion-segment-button-color-checked); // Color of the checked segment button
+    //  //--color-focused: '';	// Color of the segment button when focused with the tab key
+    //  //--color-hover: '';	// Color of the segment button on hover
+    //  --indicator-box-shadow: var(--ion-segment-button-indicator-box-shadow); // Box shadow on the indicator for the checked segment button
+    //  --indicator-color: var(--ion-segment-button-indicator-color); // Color of the indicator for the checked segment button
+    //  //--indicator-height: '';	// Height of the indicator for the checked segment button
+    //  //--indicator-transform: '';	// Transform of the indicator for the checked segment button
+    //  //--indicator-transition: '';	// Transition of the indicator for the checked segment button
+    //  //--margin-bottom: '';	// Bottom margin of the segment button
+    //  //--margin-end: '';	// Right margin if direction is left-to-right, and left margin if direction is right-to-left of the segment button
+    //  //--margin-start: '';	// Left margin if direction is left-to-right, and right margin if direction is right-to-left of the segment button
+    //  //--margin-top: '';	// Top margin of the segment button
+    //  --padding-top: var(--ion-segment-button-padding-top, var(--ion-segment-button-padding-y)); // Top padding of the segment button
+    //  --padding-end: var(--ion-segment-button-padding-end, var(--ion-segment-button-padding-x)); // Right padding if direction is left-to-right, and left padding if direction is right-to-left of the segment button
+    //  --padding-bottom: var(--ion-segment-button-padding-bottom, var(--ion-segment-button-padding-y)); // Bottom padding of the segment button
+    //  --padding-start: var(--ion-segment-button-padding-start, var(--ion-segment-button-padding-x)); // Left padding if direction is left-to-right, and right padding if direction is right-to-left of the segment button
+    //  //--transition: '';	// Transition of the segment button
+    text-transform: var(--ion-segment-button-text-transform); // Text transform of the segment button
+    //
+    //  &.segment-button-checked {
+    //  }
+  }
+
+  &.md {
+
+    #{$ion-segment}-button {
+      --color-checked: var(--ion-segment-button-indicator-color-checked); // Color of the checked segment button (indicator)
+      --indicator-color: var(--ion-segment-button-indicator-color); // Color of the segment button
+
+      // app specific
+      &:not(.segment-button-checked)::part(indicator) {
+        opacity: $opacity-level-medium;
+      }
+
+      &.segment-button-checked {
+        // app specific
+        --indicator-color: var(--ion-segment-button-indicator-color-checked); // Color of the segment button
+
+        // app specific
+        ion-icon,
+        ion-label {
+          color: var(--ion-text-color);
+        }
+      }
+    }
+  }
+
+  &.ios {
+    --background: var(--ion-segment-background); // Background of the segment
+    border-radius: var(--ion-segment-border-radius); // Radius of the segment border
+    padding-inline: var(--ion-segment-padding-x); // Horizontal padding of the segment
+    // Top padding of the segment button
+    // Right padding if direction is left-to-right, and left padding if direction is right-to-left of the segment button
+    // Bottom padding of the segment button
+    // Left padding if direction is left-to-right, and right padding if direction is right-to-left of the segment button
+    padding: var(--ion-segment-padding-top, var(--ion-segment-padding-y)) var(--ion-segment-padding-end, var(--ion-segment-padding-x)) var(--ion-segment-padding-bottom, var(--ion-segment-padding-y)) var(--ion-segment-padding-start, var(--ion-segment-padding-x));
+
+    #{$ion-segment}-button {
+      --background: var(--ion-segment-button-background); // Background of the segment button
+      //--background-checked: '';	// Background of the checked segment button
+      //--background-focused: '';	// Background of the segment button when focused with the tab key
+      //--background-focused-opacity: '';	// Opacity of the segment button background when focused with the tab key
+      //--background-hover: '';	// Background of the segment button on hover
+      //--background-hover-opacity: '';	// Opacity of the segment button background on hover
+      //--border-color: '';	// Color of the segment button border
+      --border-radius: var(--ion-segment-button-border-radius); // Radius of the segment button border
+      //--border-style: '';	// Style of the segment button border
+      --border-width: var(--ion-segment-button-border-width); // Width of the segment button border
+      --color: var(--ion-segment-button-color); // Color of the segment button
+      --color-checked: var(--ion-segment-button-color-checked); // Color of the checked segment button
+      //--color-focused: '';	// Color of the segment button when focused with the tab key
+      //--color-hover: '';	// Color of the segment button on hover
+      --indicator-box-shadow: var(--ion-segment-button-indicator-box-shadow); // Box shadow on the indicator for the checked segment button
+      --indicator-color: var(--ion-segment-button-indicator-color); // Color of the indicator for the checked segment button
+      //--indicator-height: '';	// Height of the indicator for the checked segment button
+      //--indicator-transform: '';	// Transform of the indicator for the checked segment button
+      //--indicator-transition: '';	// Transition of the indicator for the checked segment button
+      //--margin-bottom: '';	// Bottom margin of the segment button
+      //--margin-end: '';	// Right margin if direction is left-to-right, and left margin if direction is right-to-left of the segment button
+      //--margin-start: '';	// Left margin if direction is left-to-right, and right margin if direction is right-to-left of the segment button
+      //--margin-top: '';	// Top margin of the segment button
+      --padding-top: var(--ion-segment-button-padding-top, var(--ion-segment-button-padding-y)); // Top padding of the segment button
+      --padding-end: var(--ion-segment-button-padding-end, var(--ion-segment-button-padding-x)); // Right padding if direction is left-to-right, and left padding if direction is right-to-left of the segment button
+      --padding-bottom: var(--ion-segment-button-padding-bottom, var(--ion-segment-button-padding-y)); // Bottom padding of the segment button
+      --padding-start: var(--ion-segment-button-padding-start, var(--ion-segment-button-padding-x)); // Left padding if direction is left-to-right, and right padding if direction is right-to-left of the segment button
+      //--transition: '';	// Transition of the segment button
+    }
+  }
+}

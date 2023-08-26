@@ -1,0 +1,17 @@
+.rounded {
+  border-radius: var(--theme-border-radius);
+
+  // to round native image inside ion-img
+  &::part(image) {
+    border-radius: var(--theme-border-radius);
+  }
+
+  &-circle {
+    border-radius: var(--theme-border-radius-circle);
+
+    // to round native image inside ion-img
+    &::part(image) {
+      border-radius: var(--theme-border-radius-circle);
+    }
+  }
+}

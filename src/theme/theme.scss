@@ -1,0 +1,49 @@
+@import 'functions/functions';
+@import 'tokens/color-tokens';
+@import 'tokens/design-tokens';
+@import 'tokens/font-tokens';
+
+@import 'variables';
+@import 'shared/reboot';
+
+// Ionic Theme Style Overwriting
+@import '@ionic/angular/css/core';
+
+// Components
+@import 'ion-accordion';
+@import 'ion-action-sheet';
+@import 'ion-badge';
+@import 'ion-button';
+@import 'ion-card';
+@import 'ion-checkbox';
+@import 'ion-content';
+@import 'ion-grid';
+@import 'ion-item';
+@import 'ion-item-divider';
+@import 'ion-menu';
+@import 'forms';
+@import 'header';
+@import 'images';
+@import 'ion-list';
+@import 'ion-loading';
+@import 'ion-modal';
+@import 'ion-segment';
+@import 'tab-bar';
+@import 'toolbar';
+@import 'typography';
+
+// Utilities
+@import 'utilities/border';
+@import 'utilities/core';
+@import 'utilities/display';
+@import 'utilities/flexbox';
+@import 'utilities/margin';
+@import 'utilities/position';
+@import 'utilities/ratio';
+@import 'utilities/typography';
+@import 'utilities/shadow';
+@import 'utilities/utilities';
+
+// Globals
+@import 'shared/brand';
+@import 'shared/page';

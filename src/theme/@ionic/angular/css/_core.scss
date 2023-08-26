@@ -1,0 +1,7 @@
+html, html.ios, html.md {
+  --ion-default-font: #{$default-font-family};
+}
+
+.can-go-back ion-header ion-back-button {
+  display: block;
+}

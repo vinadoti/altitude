@@ -1,0 +1,109 @@
+form {
+
+  ion-label {
+    display: inline-block;
+  }
+
+  .append-item {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: var(--padding-end);
+    font-size: var(--font-size-sm);
+    color: var($black);
+    z-index: 3;
+    // reboot
+    margin: 0;
+  }
+
+  ion-input {
+
+    &.custom {
+      //--background: '';	// Background of the input
+      --color: var(--ion-input-color); // Color of the input text
+      --border-color: var(--ion-input-border-color); // Color of the border below the input when using helper text, error text, or counter
+      --border-style: var(--ion-input-border-style); // Style of the border below the input when using helper text, error text, or counter
+      --border-radius: var(--ion-input-border-radius); // Radius of the input
+      --highlight-color-focused: var(--ion-color-secondary); // The color of the highlight on the input when focused
+      //--highlight-color-invalid: '';	// The color of the highlight on the input when invalid
+      --highlight-color-valid: var(--highlight-color-focused); // The color of the highlight on the input when valid
+      //--padding-bottom: '';	// Bottom padding of the input
+      --padding-end: var(--theme-padding); // Right padding if direction is left-to-right, and left padding if direction is right-to-left of the input
+      --padding-start: var(--theme-padding); // Left padding if direction is left-to-right, and right padding if direction is right-to-left of the input
+      //--padding-top: '';	// Top padding of the input
+      --placeholder-color: var(--form-input-placeholder-color); // Color of the input placeholder text
+      //--placeholder-font-style: '';	// Font style of the input placeholder text
+      //--placeholder-font-weight: '';	// Font weight of the input placeholder text
+      //--placeholder-opacity: '';	// Opacity of the input placeholder text
+
+      --border-width: 0; // Width of the border below the input when using helper text, error text, or counter
+
+      // If you need border all around the input, use this
+      @if ($enable-input-around-border) {
+        border: var(--ion-input-border-width) var(--border-style) var(--border-color);
+        border-radius: var(--border-radius);
+      }
+
+      &.input-disabled {
+        opacity: .6;
+        input {
+          opacity: 1;
+        }
+      }
+
+      // Border below the input when using helper text, error text, or counter
+      .input-bottom {
+        // to align the border with the input bottom line (if any)
+        padding-top: 0;
+      }
+
+      .input-highlight {
+        display: none;
+      }
+    }
+  }
+
+  ion-checkbox {
+    --border-radius: var(--ion-checkbox-border-radius);
+  }
+
+  ion-select {
+    //--background: ''; // Background of the select
+    --border-color: var(--ion-text-color); // Color of the select border
+    --border-radius: var(--ion-select-border-radius); // Radius of the select border
+    //--border-style: var(--ion-select-border-style); // Style of the select border
+    //--border-width: var(--ion-select-border-width); // Width of the select border
+    //--highlight-color-focused: ''; // The color of the highlight on the select when focused
+    //--highlight-color-invalid: ''; // The color of the highlight on the select when invalid
+    --highlight-color-valid: var(--border-color); // The color of the highlight on the select when valid
+    //--padding-bottom: ''; // Bottom padding of the select
+    //--padding-end: ''; // Right padding if direction is left-to-right, and left padding if direction is right-to-left of the select
+    //--padding-start: ''; // Left padding if direction is left-to-right, and right padding if direction is right-to-left of the select
+    //--padding-top: ''; // Top padding of the select
+    //--placeholder-color: ''; // Color of the select placeholder text
+    //--placeholder-opacity: ''; // Opacity of the select placeholder text
+    //--ripple-color: ''; // The color of the ripple effect on MD mode.
+
+    &::part(text),
+    &::part(placeholder) {
+      text-align: left;
+    }
+
+    &::part(icon),
+    &::part(placeholder) {
+    }
+  }
+
+  &.over-color {
+
+    ion-input {
+    }
+
+    ion-checkbox {
+    }
+  }
+
+  &:host(.select-fill-outline) .notch-spacer {
+    display: none;
+  }
+}

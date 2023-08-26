@@ -1,0 +1,26 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.img-logo {
+  margin-bottom: 20px;
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ion-input  {
+  margin-bottom: 16px;
+}
+
+.text-link {
+  text-align: right !important;
+}
+
+a {
+  color: #060606;
+}

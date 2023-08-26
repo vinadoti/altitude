@@ -1,0 +1,15 @@
+ion-badge {
+  //--background: ''; // Background of the badge
+  //--color: ''; // Text color of the badge
+  --padding-top: var(--ion-badge-padding-y);
+  --padding-end: var(--ion-badge-padding-x);
+  --padding-bottom: var(--ion-badge-padding-y);
+  --padding-start: var(--ion-badge-padding-x);
+  border-radius: var(--ion-badge-border-radius);
+  //font-weight: $font-weight-semi-bold;
+
+  &:not(:last-child),
+  &:not(:last-of-type) {
+    margin-right: .5rem;
+  }
+}

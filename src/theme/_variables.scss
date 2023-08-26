@@ -1,0 +1,251 @@
+// Body
+$body-color: $medium;
+$body-color-rgb: to-rgb($body-color);
+$body-bg: $light;
+$body-bg-rgb: to-rgb($body-bg);
+
+// ion-input
+$enable-input-around-border: true;
+
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+@mixin base-theme() {
+  /** primary **/
+  --ion-color-primary: #{$primary};
+  --ion-color-primary-rgb: #{to-rgb($primary)};
+  --ion-color-primary-contrast: #{$white};
+  --ion-color-primary-contrast-rgb: #{to-rgb($white)};
+  --ion-color-primary-shade: #{shade-color($primary)};
+  --ion-color-primary-tint: #{tint-color($primary)};
+
+  /** secondary **/
+  --ion-color-secondary: #{$secondary};
+  --ion-color-secondary-rgb: #{to-rgb($secondary)};
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: #{shade-color($secondary)};
+  --ion-color-secondary-tint: #{tint-color($secondary)};
+
+  /** tertiary **/
+  --ion-color-tertiary: #{$tertiary};
+  --ion-color-tertiary-rgb: #{to-rgb($tertiary)};
+  --ion-color-tertiary-contrast: #000000;
+  --ion-color-tertiary-contrast-rgb: 0, 0, 0;
+  --ion-color-tertiary-shade: #{shade-color($tertiary)};
+  --ion-color-tertiary-tint: #{tint-color($tertiary)};
+
+
+  /** success **/
+  --ion-color-success: #{$success};
+  --ion-color-success-rgb: #{to-rgb($success)};
+  --ion-color-success-contrast: #ffffff;
+  --ion-color-success-contrast-rgb: 255, 255, 255;
+  --ion-color-success-shade: #{shade-color($success)};
+  --ion-color-success-tint: #{tint-color($success)};
+
+  /** warning **/
+  --ion-color-warning: #{$warning};
+  --ion-color-warning-rgb: #{to-rgb($warning)};
+  --ion-color-warning-contrast: #000000;
+  --ion-color-warning-contrast-rgb: 0, 0, 0;
+  --ion-color-warning-shade: #{shade-color($warning)};
+  --ion-color-warning-tint: #{tint-color($warning)};
+
+  /** danger **/
+  --ion-color-danger: #{$danger};
+  --ion-color-danger-rgb: #{to-rgb($danger)};
+  --ion-color-danger-contrast: #ffffff;
+  --ion-color-danger-contrast-rgb: 255, 255, 255;
+  --ion-color-danger-shade: #{shade-color($danger)};
+  --ion-color-danger-tint: #{tint-color($danger)};
+
+  /** dark **/
+  --ion-color-dark: #{$dark};
+  --ion-color-dark-rgb: #{to-rgb($dark)};
+  --ion-color-dark-contrast: #ffffff;
+  --ion-color-dark-contrast-rgb: 255, 255, 255;
+  --ion-color-dark-shade: #{shade-color($dark)};
+  --ion-color-dark-tint: #{tint-color($dark)};
+
+  /** medium **/
+  --ion-color-medium: #{$medium};
+  --ion-color-medium-rgb: #{to-rgb($medium)};
+  --ion-color-medium-contrast: #ffffff;
+  --ion-color-medium-contrast-rgb: 255, 255, 255;
+  --ion-color-medium-shade: #{shade-color($medium)};
+  --ion-color-medium-tint: #{tint-color($medium)};
+
+  /** light **/
+  --ion-color-light: #{$light};
+  --ion-color-light-rgb: #{to-rgb($light)};
+  --ion-color-light-contrast: #{$oil};
+  --ion-color-light-contrast-rgb: #{to-rgb($oil)};
+  --ion-color-light-shade: #{shade-color($light)};
+  --ion-color-light-tint: #{tint-color($light)};
+
+  // Ionic App Theme CSS Variables
+  --ion-text-color: #{$body-color}; // Text color of the entire app
+  --ion-text-color-rgb: #{$body-color-rgb}; // Text color of the entire app, rgb format
+  --ion-background-color: #{$light}; // Background color of the entire app
+  //--ion-background-color-rgb: #{$body-bg-rgb}; // Background color of the entire app, rgb format
+  //--ion-backdrop-color: ""; // Color of the Backdrop component
+  //--ion-backdrop-opacity: ""; // Opacity of the Backdrop component
+  //--ion-overlay-background-color: ""; // Background color of the overlays
+  //--ion-border-color: ""; // Border color
+  //--ion-box-shadow-color: #{tint-color($secondary, 80%)}; // Box shadow color
+  --ion-tab-bar-background: #{$tertiary}; // Background of the Tab Bar
+  --ion-tab-bar-background-focused: #{rgba($primary, $opacity-level-medium)}; // Background of the focused Tab Bar
+  //--ion-tab-bar-border-color: ""; // Border color of the Tab Bar
+  --ion-tab-bar-color: #{$secondary}; // Color of the Tab Bar
+  --ion-tab-bar-color-selected: #{$primary}; // Color of the selected Tab Button
+  --ion-toolbar-background: #{$tertiary}; // Background of the Toolbar
+  //--ion-toolbar-border-color: ""; // Border color of the Toolbar
+  --ion-toolbar-color: #{$medium}; // Color of the components in the Toolbar
+  //--ion-toolbar-segment-color: ""; // Color of the Segment Buttons in the Toolbar
+  //--ion-toolbar-segment-color-checked: ""; // Color of the checked Segment Buttons in the Toolbar
+  //--ion-toolbar-segment-background: ""; // Background of the Segment Buttons in the Toolbar
+  //--ion-toolbar-segment-background-checked: ""; // Background of the Segment Buttons in the Toolbar
+  //--ion-toolbar-segment-indicator-color: ""; // Color of the Segment Button indicator in the Toolbar
+  --ion-item-background: transparent; // Background of the Item
+  //--ion-item-border-color: ""; // Border color of the Item
+  //--ion-item-color: ""; // Color of the components in the Item
+  //--ion-placeholder-color: #{$secondary};  // Color of the placeholder in Inputs
+
+  // App Theme CSS Variables - this variables is not default Ionic theme
+
+  --theme-border-radius: #{$border-radius};
+  --theme-border-radius-circle: #{$border-radius-pill};
+  --theme-border-width: #{$border-width};
+  --theme-border-style: solid;
+  --theme-border-color: #{$light};
+
+  // ion-content
+  --theme-padding: 1rem;
+  --theme-margin: 1rem;
+
+  // ion-button
+  --ion-button-font-weight: #{$font-weight-bold};
+  --ion-button-font-size: #{$default-font-size};
+  --ion-button-text-transform: initial;
+  --ion-button-border-radius: calc(var(--theme-border-radius) * .5);
+  --ion-button-border-radius-circle: #{$border-radius-pill};
+  --ion-button-border-width: var(--theme-border-width);
+  --ion-button-box-shadow: #{$box-shadow};
+  --ion-button-padding-x: 1.5rem;
+  --ion-button-padding-y: 1rem;
+
+  // ion-badge
+  --ion-badge-border-radius: #{$border-radius-pill};
+  --ion-badge-padding-y: .5rem;
+  --ion-badge-padding-x: 1rem;
+
+  // ion-card
+  //--ion-card-color: #{$body-color};
+  --ion-card-border-radius: .5rem;
+  --ion-card-margin-block: 0;
+  --ion-card-margin-inline: 0;
+  --ion-card-box-shadow: #{$box-shadow};
+
+  // ion-toolbar
+  --ion-toolbar-padding-x: .5rem;
+  --ion-toolbar-padding-y: 1.5rem;
+  //--ion-toolbar-inline-padding: .5rem;
+  //--ion-toolbar-inline-margin: .5rem;
+  --ion-toolbar-title-font-size: #{$h1-font-size};
+  --ion-toolbar-title-font-weight: #{$font-weight-bold};
+  --ion-toolbar-title-color: #{$secondary};
+
+  // ion-segment
+  --ion-segment-background: var(--ion-color-primary);
+  --ion-segment-border-radius: .5rem .5rem 0 0;
+  --ion-segment-padding-x: 1rem;
+  --ion-segment-padding-y: .25rem;
+  --ion-segment-padding-top: var(--ion-segment-padding-y);
+  --ion-segment-padding-end: var(--ion-segment-padding-x);
+  --ion-segment-padding-bottom: var(--ion-segment-padding-y);
+  --ion-segment-padding-start: var(--ion-segment-padding-x);
+
+  // ion-segment-button
+  //--ion-segment-button-background: var(--ion-color-primary);
+  --ion-segment-button-border-width: 0;
+  --ion-segment-button-color: var(--ion-color-light);
+  --ion-segment-button-color-checked: var(--ion-color-secondary);
+  --ion-segment-button-indicator-box-shadow: none;
+  --ion-segment-button-indicator-color: var(--ion-segment-button-color);
+  --ion-segment-button-indicator-color-checked: var(--ion-segment-button-color-checked);
+  --ion-segment-button-border-radius: .5rem;
+  --ion-segment-button-padding-x: .5rem;
+  --ion-segment-button-padding-y: 1rem;
+  --ion-segment-button-padding-top: var(--ion-segment-button-padding-y);
+  --ion-segment-button-padding-end: var(--ion-segment-button-padding-x);
+  --ion-segment-button-padding-bottom: var(--ion-segment-button-padding-y);
+  --ion-segment-button-padding-start: var(--ion-segment-button-padding-x);
+  --ion-segment-button-text-transform: capitalize;
+
+  // ion-tab-bar
+  --ion-tab-bar-box-shadow: #{$box-shadow};
+
+  // ion-list
+  --ion-list-item-border-width: 0;
+  --ion-list-item-padding-x: '';
+
+  // ion-item
+  --ion-item-padding-inline: 1rem;
+  --ion-item-border-width: 0;
+  --ion-item-color-over-color: var(--ion-color-white);
+  --ion-item-detail-color: var(--ion-text-color);
+  --ion-item-detail-opacity: #{$opacity-level-intense};
+
+  // ion-item-divider
+  --ion-item-divider-background: var(--ion-color-secondary);
+  --ion-item-divider-min-height: 0;
+
+  // ion-accordion
+  --ion-accordion-border-color: #{tint-color($light, $shade-level-3)};
+  --ion-accordion-active-color: #{tint-color($light, $shade-level-3)};
+
+  // Forms
+  --form-input-bg: transparent;
+  --form-input-bg-over-color: transparent;
+  --form-input-color: var(--ion-color-secondary);
+  --form-input-color-over-color: var(--ion-color-light);
+  --form-input-border-color: var(--form-input-color);
+  --form-input-border-width: var(--theme-border-width);
+  --form-input-border-style: var(--theme-border-style);
+  --form-input-border-radius: var(--theme-border-radius);
+  --form-input-placeholder-color: #{tint-color($medium, $shade-level-1)};
+
+  // ion-input
+  --ion-input-color: var(--form-input-color);
+  --ion-input-border-width: var(--form-input-border-width);
+  --ion-input-border-color: var(--form-input-border-color);
+  --ion-input-border-style: var(--form-input-border-style);
+  --ion-input-border-radius: var(--form-input-border-radius);
+  --form-ion-input-bg-over-color: var(--form-input-bg-over-color);
+  --ion-input-color-over-color: var(--ion-color-white);
+  --ion-input-placeholder-color-over-color: var(--ion-color-white);
+
+  // ion-checkbox
+  --ion-checkbox-border-width: var(--form-input-border-width);
+  --ion-checkbox-border-style: var(--form-input-border-style);
+  --ion-checkbox-border-radius: var(--form-input-border-radius);
+  --ion-checkbox-bg-over-color: var(--form-input-bg-over-color);
+  --ion-checkbox-border-color-over-color: inherit;
+
+  // ion-select
+  --ion-select-border-width: var(--form-input-border-width);
+  --ion-select-border-style: var(--form-input-border-style);
+  --ion-select-border-radius: var(--form-input-border-radius);
+}
+
+/** Ionic CSS Variables **/
+:root {
+  @include base-theme();
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    @include base-theme();
+  }
+}

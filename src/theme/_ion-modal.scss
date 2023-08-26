@@ -1,0 +1,56 @@
+ion-modal {
+  //--backdrop-opacity: ''; // Opacity of the backdrop
+  //--background: ''; // Background of the modal content
+  //--border-color: ''; // Border color of the modal content
+  //--border-style: ''; // Border style of the modal content
+  //--border-width: ''; // Border width of the modal content
+  //--box-shadow: ''; // Box shadow of the modal content
+  //--max-height: ''; // Maximum height of the modal
+  //--max-width: ''; // Maximum width of the modal
+  //--min-height: ''; // Minimum height of the modal
+  //--width: fit-content; // Width of the modal
+  --min-width: 250px; // Minimum width of the modal
+  //--height: fit-content; // Height of the modal
+  //--border-radius: var(--theme-border-radius); // Border radius of the modal content
+  color: var(--ion-text-color);
+
+  // To prevent status bar overlap
+  &:not(.modal-dialog) {
+    padding-top: var(--ion-safe-area-top);
+  }
+
+  &.modal-dialog {
+    --max-width: 90%; // Maximum width of the modal
+    --width: fit-content; // Width of the modal
+    --height: fit-content; // Height of the modal
+    --border-radius: 6px; // Border radius of the modal content
+
+    h1, h2, h3, h4, h5, h6,
+    .h1, .h2, .h3, .h4, .h5, .h6 {
+      color: var(--ion-color-secondary);
+    }
+  }
+
+  &::part(handle) {
+    top: 1rem;
+  }
+
+  &.height-auto {
+    --height: auto;
+  }
+
+  &.no-handle {
+
+    &::part(handle) {
+      display: none;
+    }
+  }
+
+  &.action-sheet {
+
+    &::part(content) {
+      border-top-left-radius: var(--theme-border-radius);
+      border-top-right-radius: var(--theme-border-radius);
+    }
+  }
+}

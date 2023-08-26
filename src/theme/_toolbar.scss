@@ -1,0 +1,25 @@
+ion-toolbar {
+  //--background: var(--ion-toolbar-background); // Background of the toolbar
+  //--border-color: '';	// Color of the toolbar border
+  //--border-style: '';	// Style of the toolbar border
+  //--border-width: '';	// Width of the toolbar border
+  //--color: '';	// Color of the toolbar text
+  //--min-height: '';	// Minimum height of the toolbar
+  //--opacity: '';	// Opacity of the toolbar background
+  --padding-bottom: var(--ion-toolbar-padding-y);	// Bottom padding of the toolbar
+  --padding-end: var(--ion-toolbar-padding-x);	// Right padding if direction is left-to-right, and left padding if direction is right-to-left of the toolbar
+  //--padding-start: var(--ion-toolbar-padding-x);	// Left padding if direction is left-to-right, and right padding if direction is right-to-left of the toolbar
+  --padding-top: var(--ion-toolbar-padding-y);	// Top padding of the toolbar
+  --ion-padding: var(--ion-toolbar-inline-padding);
+  --ion-margin: var(--ion-toolbar-inline-margin);
+
+  ion-title {
+    font-size: var(--ion-toolbar-title-font-size);
+    font-weight: var(--ion-toolbar-title-font-weight);
+    color: var(--ion-toolbar-title-color);
+
+    &.ios {
+      padding-inline: 50px;
+    }
+  }
+}

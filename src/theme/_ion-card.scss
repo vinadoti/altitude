@@ -1,0 +1,45 @@
+ion-card {
+  --background: var($lotion); // Background of the card
+  --color: var(--ion-card-color); // Color of the card
+  //box-shadow: var(--ion-card-box-shadow);
+  border-radius: var(--ion-card-border-radius, var(--theme-border-radius));
+  margin-block: var(--ion-card-margin-block, 0.5rem);
+  margin-inline: var(--ion-card-margin-inline, 0.5rem);
+
+  &-content {
+
+    &.custom {
+      text-align: center;
+      padding: 2rem .5rem;
+
+      ion-icon {
+        color: var(--ion-color-secondary);
+      }
+    }
+
+    &.descriptive {
+      padding: .5rem;
+
+      h2 {
+        margin-bottom: var(--theme-margin);
+      }
+
+      p {
+        font-size: var(--font-size-xs);
+      }
+
+      ion-button {
+        font-size: var(--font-size-xs);
+        --padding-start: 0;
+      }
+    }
+  }
+
+  &-subtitle {
+
+  }
+
+  &-title {
+
+  }
+}

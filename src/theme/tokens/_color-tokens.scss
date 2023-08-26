@@ -1,0 +1,41 @@
+// Shell Guidelines: https://www.brendoncleaver.com/brand/shell-guidelines
+
+// Colors
+
+$white: #F4F4F4;
+
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+// Theme Colors
+$orioles-orange: #FF5714; //primary
+$black: #060606; //secondary
+$lotion: #FCFCFC; // tertiary
+$yellow-green:#38B000; // success
+$gold-drop: #eb8705; // warning
+$red-danger: #FF0000; //danger
+$azure: #0085FF; //info
+$oil: #373a3a; // dark
+$davy-grey: #54585a; // medium
+$bright-gray: #EFEFEF; // light
+
+// --------------------------------------------------------
+
+// Theme variables
+$primary: $orioles-orange;
+$secondary: $black;
+$tertiary: $lotion;
+$success: $yellow-green;
+$warning: $gold-drop;
+$danger: $red-danger;
+$info: $azure;
+$dark: $oil;
+$medium: $davy-grey;
+$light: $bright-gray;

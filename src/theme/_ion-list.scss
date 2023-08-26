@@ -1,0 +1,19 @@
+ion-list {
+
+  ion-item {
+    --inner-padding-end: var(--ion-list-item-padding-x, var(--ion-item-padding-inline));
+    --inner-padding-start: var(--ion-list-item-padding-x, var(--ion-item-padding-inline));
+    --padding-start: var(--ion-list-item-padding-x, var(--ion-item-padding-inline));
+    text-align: inherit;
+
+    ion-label {
+      margin-right: 1rem;
+    }
+
+    // ----------------
+
+    ion-icon {
+      color: var(--ion-color-secondary); // Color of list icons
+    }
+  }
+}

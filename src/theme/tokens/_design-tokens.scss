@@ -1,0 +1,44 @@
+// Border Radius
+$border-radius-sm: .25rem; // 4px
+$border-radius: .625rem; // 10px
+$border-radius-lg: .75rem; // 12px
+$border-radius-pill: 50rem; // 9999px
+
+// Border Width
+$border-width-sm: .0625rem;
+$border-width: 1px;
+$border-width-lg: .25rem;
+
+// Levels
+
+// Opacity
+$opacity-level-semi-opaque: .72;
+$opacity-level-intense: .64;
+$opacity-level-medium: .32;
+$opacity-level-light: .16;
+$opacity-level-semi-transparent: .08;
+
+// Shade
+$shade-level-1: 8%;
+$shade-level-2: 48%;
+$shade-level-3: 80%;
+
+// Tint
+$tint-level-1: 8%;
+$tint-level-2: 48%;
+$tint-level-3: 80%;
+
+// Shadow
+$default-box-shadow-color: #{rgba(($light), $opacity-level-intense)};
+$box-shadow-sm: 0px 4px 8px 0px var(--ion-box-shadow-color, #{$default-box-shadow-color});
+$box-shadow: 0px 1px 2px 0px var(--ion-box-shadow-color, #{$default-box-shadow-color});
+$box-shadow-activated: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+$box-shadow-lg: 0px 16px 32px 0px var(--ion-box-shadow-color, #{$default-box-shadow-color});
+
+// Ratios
+$aspect-ratios: (
+  "1x1": 100%,
+  "4x3": calc(3 / 4 * 100%),
+  "16x9": calc(9 / 16 * 100%),
+  "21x9": calc(9 / 21 * 100%)
+);

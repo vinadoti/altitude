@@ -1,0 +1,47 @@
+ion-accordion {
+  border-radius: var(--theme-border-radius);
+  border: var(--theme-border-width) var(--theme-border-style) var(--ion-accordion-border-color);
+  margin-bottom: 1rem;
+
+  [slot='header'] {
+    // app specific
+    ion-avatar {
+      --border-radius: var(--theme-border-radius);
+    }
+  }
+
+  [slot='content'] {
+  }
+
+  &.accordion-expanded,
+  &.accordion-expanding {
+
+    [slot='header'] {
+      //--ion-item-color: var(--ion-accordion-active-color);
+      font-weight: $font-weight-medium;
+    }
+  }
+
+  //header	The wrapper element for the header slot.
+  &::part(header) {
+    border-radius: var(--theme-border-radius);
+  }
+
+  &::part(header expanded) {
+    // app specific
+    border-bottom: var(--theme-border-width) var(--theme-border-style) var(--ion-accordion-active-color);
+  }
+
+  //content	The wrapper element for the content slot.
+  &::part(content) {
+    --padding-start: 0;
+    --inner-padding-end: 0;
+  }
+
+  &::part(content expanded) {
+  }
+
+  //expanded  The expanded element. Can be used in combination with the header and content parts (i.e. ::part(header expanded)).
+  &::part(expanded) {
+  }
+}

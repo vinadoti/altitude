@@ -1,0 +1,41 @@
+.fw-regular {
+  font-weight: $font-weight-regular;
+}
+
+.fw-bold {
+  font-weight: $font-weight-bold;
+}
+
+.fw-extra-bold {
+  font-weight: $font-weight-extra-bold;
+}
+
+.ff-body {
+  font-family: $default-font-family;
+}
+
+.ff-heading {
+  font-family: $headings-font-family;
+}
+
+.text-transform {
+
+  &-initial {
+    text-transform: initial;
+  }
+}
+
+.text-pre-line {
+  white-space: pre-line;
+}
+
+.text-decoration {
+
+  &-none {
+    text-decoration: none;
+  }
+
+  &-underline {
+    text-decoration: underline;
+  }
+}

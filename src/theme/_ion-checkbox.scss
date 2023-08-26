@@ -1,0 +1,13 @@
+ion-checkbox {
+  --border-color: var(--ion-color-secondary); // Border color of the checkbox icon
+  --border-color-checked: var(--border-color); // Border color of the checkbox icon when checked
+  //--border-radius: ''; // Border radius of the checkbox icon
+  //--border-style: ''; // Border style of the checkbox icon
+  //--border-width: ''; // Border width of the checkbox icon
+  //--checkbox-background: ''; // Background of the checkbox icon
+  --checkbox-background-checked: var(--ion-color-secondary); // Background of the checkbox icon when checked
+  --checkmark-color: var(--ion-color-secondary-contrast); // Color of the checkbox checkmark when checked
+  //--checkmark-width: ''; // Stroke width of the checkbox checkmark
+  //--size: ''; // Size of the checkbox icon
+  //--transition: ''; // Transition of the checkbox icon
+}

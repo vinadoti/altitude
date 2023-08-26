@@ -1,0 +1,14 @@
+ion-menu {
+  --background: #{tint-color($primary, 80%)}; // Background of the menu
+  //--height: ''; // Height of the menu
+  --width: 70%; // Width of the menu
+  //--max-height: ''; // Maximum height of the menu
+  //--max-width: ''; // Maximum width of the menu
+  //--min-height: ''; // Minimum height of the menu
+  //--min-width: ''; // Minimum width of the menu
+
+  ion-content {
+    --padding-top: 0;
+    --background: var(--background); // Background of the menu content
+  }
+}

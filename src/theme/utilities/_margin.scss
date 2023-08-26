@@ -32,3 +32,38 @@
     margin-top: 0.25rem !important;
   }
 }
+
+.p {
+
+      &-auto {
+     padding: auto;
+     padding-inline: auto;
+     padding-block: auto;
+      }
+
+      &x {
+
+     &-auto {
+        padding-left: auto;
+        padding-right: auto;
+        padding-inline: auto;
+     }
+      }
+
+      &y {
+
+     &-auto {
+        padding-top: auto;
+        padding-bottom: auto;
+        padding-block: auto;
+     }
+      }
+
+      &b-1{
+     padding-bottom: 0.25rem !important;
+      }
+
+      &t-1{
+     padding-top: 0.25rem !important;
+      }
+}

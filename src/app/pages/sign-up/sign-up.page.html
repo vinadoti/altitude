@@ -1,0 +1,41 @@
+<ion-content class="no-scroll ion-padding">
+  <div class="container">
+    <app-title-auth-pages
+            title="Cadastrar minha conta"
+            subtitle="Bem vindo de volta, preencha com seus dados para acessar a sua conta">
+    </app-title-auth-pages>
+    <form>
+      <ion-input class="custom"
+                 label="Nome"
+                 labelPlacement="floating"
+                 placeholder="Nome"
+                 type="text" required></ion-input>
+      <ion-input class="custom"
+                 label="E-mail"
+                 labelPlacement="floating"
+                 placeholder="email@email.com"
+                 type="email" required>
+      </ion-input>
+      <ion-input class="custom"
+                 label="Senha"
+                 labelPlacement="floating"
+                 placeholder="********"
+                 type="password" required>
+      </ion-input>
+      <ion-text class="pb-1">
+        <p class="fs-xs">
+          A senha deve conter 8 ou mais caracteres, com pelo menos um número, uma letra minúscula e uma maiúscula.
+        </p>
+      </ion-text>
+      <ion-button color="dark" expand="block" class="ion-margin-top" [routerLink]="['']">Cadastrar</ion-button>
+      <ion-text class="ion-text-center">
+        <p>
+          Já tem uma conta?
+          <ion-button class="text-link" fill="clear" [routerLink]="['/login']">
+            Fazer login
+          </ion-button>
+        </p>
+      </ion-text>
+    </form>
+  </div>
+</ion-content>

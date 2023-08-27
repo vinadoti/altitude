@@ -1,0 +1,100 @@
+<ion-header xmlns="http://www.w3.org/1999/html">
+  <ion-toolbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <ion-segment value="liked">
+      <ion-segment-button value="liked">
+        <ion-label>Gostei</ion-label>
+        <ion-icon name="ic-coracao"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="done">
+        <ion-label>Feito</ion-label>
+        <ion-icon name="ic-check"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="saved">
+        <ion-label>Salvos</ion-label>
+        <ion-icon name="ic-salvo"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="wall">
+        <ion-label>Paredes</ion-label>
+        <ion-icon name="ic-agarra"></ion-icon>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <ion-searchbar placeholder="Procurar boulders"></ion-searchbar>
+  <ion-button expand="block" routerLink="/boulders" color="secondary">Criar novo boulder</ion-button>
+  <p class="fs-sm ion-text-center">
+    Ops! No momento não possui nenhum boulder disponível
+  </p>
+
+    <ion-list>
+      <ion-card color="tertiary">
+        <ion-card-content>
+            <ion-card-title>
+                <ion-row class="ion-align-items-center ion-justify-content-between">
+                <ion-col size="10">
+                  <ion-avatar>
+                    <ion-img src="/assets/images/img-list-groups.png"></ion-img>
+                  </ion-avatar>
+                </ion-col>
+                <ion-col size="2">
+                    <ion-text color="primary" class="fw-extra-bold fs-xxxl">V1</ion-text>
+                </ion-col>
+                </ion-row>
+              <ion-text>
+                <h1 class="fw-bold fs-default pt-0h">
+                  Boulder 1
+                </h1>
+                <p class="fs-xs pb-0h">
+                  Vivian Nadoti
+                </p>
+              </ion-text>
+            </ion-card-title>
+          <ion-item-divider></ion-item-divider>
+            <ion-row class="ion-align-items-center ion-justify-content-between">
+                <ion-col size="10" class="p-0">
+                  <ion-row class="ion-align-items-center">
+                    <ion-text>
+                      <p class="pe-1">
+                        <ion-button fill="clear" class="text-link">
+                          <ion-icon name="ic-coracao"></ion-icon>
+                        </ion-button>
+                        0
+                      </p>
+                    </ion-text>
+                    <ion-text>
+                      <p class="pe-1">
+                        <ion-button fill="clear" class="text-link" >
+                          <ion-icon name="ic-check"></ion-icon>
+                        </ion-button>
+                        0
+                      </p>
+                    </ion-text>
+                    <ion-text>
+                      <p class="pe-1">
+                        <ion-button  fill="clear" class="text-link" >
+                          <ion-icon name="ic-chat"></ion-icon>
+                        </ion-button>
+                        0
+                      </p>
+                    </ion-text>
+                  </ion-row>
+                </ion-col>
+                <ion-col size="2">
+                  <p>
+                    Jun 23
+                  </p>
+                </ion-col>
+            </ion-row>
+        </ion-card-content>
+
+      </ion-card>
+    </ion-list>
+</ion-content>

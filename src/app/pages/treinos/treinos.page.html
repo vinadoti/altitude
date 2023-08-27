@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Treinos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-img src="/assets/images/img-banner-treinos.png" class="rounded banner"></ion-img>
+    <div class="list">
+      <ion-list [inset]="true" lines="full">
+        <ion-item class="item-has-start-slot item item-lines-default" role="listitem" [routerLink]="">
+          <ion-avatar slot="start">
+            <ion-img src="/assets/images/img-list-groups.png"></ion-img>
+          </ion-avatar>
+          <ion-label>
+            <h2 class="fw-semibold">
+              Básicos
+            </h2>
+            <p class="ion-text-wrap fs-xs">
+              Aprenda o básico sobre escalar, os termos mais importantes, os tipos diferentes de escalada e etc...
+            </p>
+          </ion-label>
+          <ion-button slot="end" fill="clear">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </ion-button>
+        </ion-item>
+        <ion-item class="item-has-start-slot item item-lines-default" role="listitem" [routerLink]="">
+          <ion-avatar slot="start">
+            <ion-img src="/assets/images/img-list-groups.png"></ion-img>
+          </ion-avatar>
+          <ion-label>
+            <h2 class="fw-semibold">
+              Treinos iniciante
+            </h2>
+            <p class="ion-text-wrap fs-xs">
+              Começou agora? Preparamos um treino para você iniciar nesse mundo da escalada da melhor forma possível.
+            </p>
+
+          </ion-label>
+          <ion-button slot="end" fill="clear">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </ion-button>
+        </ion-item>
+        <ion-item class="item-has-start-slot item item-lines-default" role="listitem" [routerLink]="">
+          <ion-avatar slot="start">
+            <ion-img src="/assets/images/img-list-groups.png"></ion-img>
+          </ion-avatar>
+          <ion-label>
+            <h2 class="fw-semibold">
+              Treinos campeonato
+            </h2>
+            <p class="ion-text-wrap fs-xs">
+              Siga a planilha de treino para se
+              preparar para os campeonatos. Kmon !
+            </p>
+          </ion-label>
+          <ion-button slot="end" fill="clear">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </ion-button>
+        </ion-item>
+      </ion-list>
+    </div>
+</ion-content>
+
+
+<!--
+<ion-list>
+  <ion-item *ngFor="let item of items">
+    <ion-avatar item-left>
+      <img src="{{item.avatarSrc}}">
+    </ion-avatar>
+    <h2>{{item.title}}</h2>
+    <p>{{item.description}}</p>
+  </ion-item>
+</ion-list>-->

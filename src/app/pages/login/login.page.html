@@ -1,0 +1,34 @@
+<ion-content class="no-scroll ion-padding">
+  <div class="container">
+    <app-title-auth-pages
+            title="Acessar minha conta"
+            subtitle="Bem vindo de volta, preencha com seus dados para acessar a sua conta">
+    </app-title-auth-pages>
+    <form>
+      <ion-input class="custom"
+                 label="E-mail"
+                 labelPlacement="floating"
+                 placeholder="email@email.com"
+                 type="email" required></ion-input>
+      <ion-input class="custom"
+                 label="Senha"
+                 labelPlacement="floating"
+                 placeholder="********"
+                 type="password" required></ion-input>
+      <p class="ion-text-end">
+        <ion-button class="text-link" fill="clear" size="small" [routerLink]="['/forgot-password']">
+          Esqueceu a senha?
+        </ion-button>
+      </p>
+      <ion-button color="dark" expand="block" [routerLink]="['']">Entrar</ion-button>
+      <ion-text class="ion-text-center">
+        <p>
+          Não tem uma conta?
+            <ion-button class="text-link" fill="clear" [routerLink]="['/sign-up']">
+                Cadastre-se
+            </ion-button>
+        </p>
+      </ion-text>
+    </form>
+  </div>
+</ion-content>

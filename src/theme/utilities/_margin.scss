@@ -24,46 +24,62 @@
     }
   }
 
-  &b-1{
+  &b-1 {
     margin-bottom: 0.25rem !important;
   }
 
-  &t-1{
+  &t-1 {
     margin-top: 0.25rem !important;
   }
 }
 
 .p {
 
-      &-auto {
-     padding: auto;
-     padding-inline: auto;
-     padding-block: auto;
-      }
+  &-auto {
+    padding: auto;
+    padding-inline: auto;
+    padding-block: auto;
+  }
 
-      &x {
+  &x {
 
-     &-auto {
-        padding-left: auto;
-        padding-right: auto;
-        padding-inline: auto;
-     }
-      }
+    &-auto {
+      padding-left: auto;
+      padding-right: auto;
+      padding-inline: auto;
+    }
+  }
 
-      &y {
+  &y {
 
-     &-auto {
-        padding-top: auto;
-        padding-bottom: auto;
-        padding-block: auto;
-     }
-      }
+    &-auto {
+      padding-top: auto;
+      padding-bottom: auto;
+      padding-block: auto;
+    }
+  }
 
-      &b-1{
-     padding-bottom: 0.25rem !important;
-      }
+  &e-1 {
+    padding-right: 1rem !important;
+  }
 
-      &t-1{
-     padding-top: 0.25rem !important;
-      }
+  &b-0h {
+    padding-bottom: 0.5rem !important;
+  }
+
+  &b-1 {
+    padding-bottom: 1rem !important;
+  }
+
+  &t-0h {
+    padding-top: 0.5rem !important;
+  }
+
+  &t-1 {
+    padding-top: 1rem !important;
+  }
+
+  &-0 {
+    padding: 0 !important;
+  }
 }

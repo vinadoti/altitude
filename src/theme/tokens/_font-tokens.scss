@@ -1,20 +1,22 @@
 // Font Weight
-$font-weight-thin: 100;
-$font-weight-extra-light: 200;
-$font-weight-light: 300;
-$font-weight-regular: 400;
-$font-weight-medium: 500;
-$font-weight-semi-bold: 600;
-$font-weight-bold: 700;
-$font-weight-extra-bold: 800;
-$font-weight-black: 900;
+$font-weight-thin: 100 !important;
+$font-weight-extra-light: 200 !important;
+$font-weight-light: 300 !important;
+$font-weight-regular: 400 !important;
+$font-weight-medium: 500 !important;
+$font-weight-semi-bold: 600 !important;
+$font-weight-bold: 700 !important;
+$font-weight-extra-bold: 800 !important;
+$font-weight-black: 900 !important;
 
 // Font Size
-$font-size-xs: .75rem; // 12px
-$font-size-sm: .875rem; // 14px
-$default-font-size: 1rem; // 16px
-$font-size-lg: 1.125rem; // 18px
-$font-size-xl: 1.25rem; // 20px
+$font-size-xs: .75rem !important; // 12px
+$font-size-sm: .875rem !important; // 14px
+$default-font-size: 1rem !important; // 16px
+$font-size-lg: 1.125rem !important; // 18px
+$font-size-xl: 1.25rem !important; // 20px
+$font-size-xxl: 1.5rem !important; // 24px
+$font-size-xxxl: 1.875rem !important; // 30px
 
 // Font Family
 $default-font-family: "Montserrat", sans-serif;

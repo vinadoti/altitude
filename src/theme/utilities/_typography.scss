@@ -2,6 +2,10 @@
   font-weight: $font-weight-regular;
 }
 
+.fw-semibold {
+  font-weight: $font-weight-semi-bold;
+}
+
 .fw-bold {
   font-weight: $font-weight-bold;
 }
@@ -24,6 +28,22 @@
 
 .fs-sm {
   font-size: $font-size-sm;
+}
+
+.fs-default {
+  font-size: $default-font-size;
+}
+
+.fs-lg {
+  font-size: $font-size-lg;
+}
+
+.fs-xl {
+  font-size: $font-size-xl;
+}
+
+.fs-xxxl {
+  font-size: $font-size-xxxl;
 }
 
 .text-transform {

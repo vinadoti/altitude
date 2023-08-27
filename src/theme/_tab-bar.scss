@@ -10,7 +10,7 @@ ion-tab {
     //--color: var(--ion-color-secondary); // Color of the tab bar
     box-shadow: var(--ion-tab-bar-box-shadow);
     border-radius: var(--theme-border-radius-circle);
-    margin: 0 10px 10px 10px;
+    margin: 10px;
 
     // This height needed because ion-tab-bar is an absolute layout (root
     // layout), so it MUST have a declared height

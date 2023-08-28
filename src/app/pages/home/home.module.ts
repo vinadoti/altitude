@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 import { ExploreContainerComponentModule } from '../../components/explore-container/explore-container.module';
+import {CardBoulderComponentModule} from '../../components/card-boulder/card-boulder.module';
 
 @NgModule({
   imports: [
@@ -12,8 +13,9 @@ import { ExploreContainerComponentModule } from '../../components/explore-contai
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    RouterModule.forChild([{ path: '', component: HomePage }])
+    RouterModule.forChild([{path: '', component: HomePage}]),
+    CardBoulderComponentModule
   ],
-  declarations: [HomePage]
+    declarations: [HomePage]
 })
 export class HomePageModule {}

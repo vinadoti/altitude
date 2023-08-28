@@ -1,0 +1,62 @@
+<ion-card color="tertiary"  [style.--graduation-color]="graduationColor" >
+  <ion-card-content>
+    <ion-card-title>
+      <ion-row class="ion-align-items-center ion-justify-content-between">
+        <ion-col size="10">
+          <ion-avatar>
+            <ion-img src="/assets/images/img-list-groups.png"></ion-img>
+          </ion-avatar>
+        </ion-col>
+        <ion-col size="2">
+          <ion-text color="{{graduationColor}}" class="fw-extra-bold fs-xxxl">
+            {{ grade }}
+          </ion-text>
+        </ion-col>
+      </ion-row>
+      <ion-text>
+        <h1 class="fw-bold fs-default pt-0h">
+          {{ name }}
+        </h1>
+        <p class="fs-xs pb-0h">
+          {{ setter }}
+        </p>
+      </ion-text>
+    </ion-card-title>
+    <ion-item-divider></ion-item-divider>
+    <ion-row class="ion-align-items-center ion-justify-content-between">
+      <ion-col size="10" class="p-0">
+        <ion-row class="ion-align-items-center">
+          <ion-text>
+            <p class="pe-1">
+              <ion-button fill="clear" class="text-link">
+                <ion-icon name="ic-coracao"></ion-icon>
+              </ion-button>
+              {{ likes }}
+            </p>
+          </ion-text>
+          <ion-text>
+            <p class="pe-1">
+              <ion-button fill="clear" class="text-link">
+                <ion-icon name="ic-check"></ion-icon>
+              </ion-button>
+                {{ done }}
+            </p>
+          </ion-text>
+          <ion-text>
+            <p class="pe-1">
+              <ion-button fill="clear" class="text-link">
+                <ion-icon name="ic-chat"></ion-icon>
+              </ion-button>
+                {{ comments }}
+            </p>
+          </ion-text>
+        </ion-row>
+      </ion-col>
+      <ion-col size="2">
+        <p>
+          {{ date }}
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-card-content>
+</ion-card>

@@ -1,0 +1,11 @@
+ion-card{
+  &::before {
+    background-color: var(--ion-color-primary);
+    content: "";
+    height: 100%;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 8px;
+  }
+}

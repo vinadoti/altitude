@@ -44,6 +44,14 @@ $enable-input-around-border: true;
   --ion-color-success-shade: #{shade-color($success)};
   --ion-color-success-tint: #{tint-color($success)};
 
+  /** info **/
+  --ion-color-info: #{$info};
+  --ion-color-info-rgb: #{to-rgb($info)};
+  --ion-color-info-contrast: #ffffff;
+  --ion-color-info-contrast-rgb: 255, 255, 255;
+  --ion-color-info-shade: #{shade-color($info)};
+  --ion-color-info-tint: #{tint-color($info)};
+
   /** warning **/
   --ion-color-warning: #{$warning};
   --ion-color-warning-rgb: #{to-rgb($warning)};

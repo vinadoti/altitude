@@ -71,7 +71,7 @@ ion-segment {
         // app specific
         ion-icon,
         ion-label {
-          color: var(--ion-text-color);
+          color: var(--ion-segment-button-indicator-color-checked);
         }
       }
     }
